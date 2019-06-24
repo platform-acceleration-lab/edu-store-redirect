@@ -1,0 +1,10 @@
+---
+applications:
+- name: edu-store-redirect-production
+  routes:
+  - route: academy.pivotal.io
+  memory: 32M
+  instances: 1
+  buildpack: staticfile_buildpack
+  env:
+    REDIRECT_URL: https://store.education.pivotal.io

@@ -1,0 +1,10 @@
+---
+applications:
+- name: edu-store-redirect-review
+  routes:
+  - route: pivotal-academy-review.cfapps.io
+  memory: 32M
+  instances: 1
+  buildpack: staticfile_buildpack
+  env:
+    REDIRECT_URL: https://pivotal-edu-store-review.cfapps.io
